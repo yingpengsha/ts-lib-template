@@ -1,23 +1,21 @@
 {
   "name": "ts-node-lib-template",
   "version": "0.0.0",
-  "description": "My awesome typescript node library",
-  "repository": "git@github.com:yingpengsha/ts-lib-template.git",
-  "author": "Pengsha Ying <yingfusheng@foxmail.com>",
   "license": "MIT",
+  "author": "Pengsha Ying <yingfusheng@foxmail.com>",
+  "description": "My awesome typescript node library",
+  "repository": "git@github.com:yingpengsha/ts-node-lib-template.git",
   "publishConfig": {
     "access": "public"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "exports": {
     "require": "./dist/index.js",
     "import": "./dist/index.mjs"
   },
-  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "tsup --watch --sourcemap",
     "build": "tsup",
