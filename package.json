@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "author": "Pengsha Ying <yingfusheng@foxmail.com>",
-  "description": "My awesome typescript node library",
+  "description": "😎 Awesome typescript node library",
   "repository": "git@github.com:yingpengsha/ts-node-lib-template.git",
   "publishConfig": {
     "access": "public"
