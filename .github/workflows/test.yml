@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Test
 
 on:
   push:
@@ -36,6 +36,7 @@ jobs:
             ${{ runner.os }}-${{ matrix.node-version }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-${{ matrix.node-version }}-build-
             ${{ runner.os }}-
+
       - name: Install pnpm
         run: npm i -g pnpm
 
