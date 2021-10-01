@@ -1,6 +1,6 @@
 {
   "name": "ts-node-lib-template",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "license": "MIT",
   "author": "Pengsha Ying <yingfusheng@foxmail.com>",
   "description": "My awesome typescript node library",
