@@ -20,7 +20,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npx lint-staged"
     }
   },
   "lint-staged": {
@@ -33,7 +33,8 @@
     "build": "tsup",
     "test": "jest --passWithNoTests --verbose false",
     "lint": "eslint '**/*.{js,ts,md,json,yml}'",
-    "release": "bump --commit --push --tag && npm publish"
+    "release": "bump --commit --push --tag && npm publish",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@jsdevtools/version-bump-prompt": "^6.1.0",
