@@ -1,10 +1,10 @@
 {
-  "name": "ts-node-lib-template",
+  "name": "ts-lib-template",
   "version": "0.0.0",
   "license": "MIT",
   "author": "Pengsha Ying <yingfusheng@foxmail.com>",
-  "description": "😎 Awesome typescript node library",
-  "repository": "git@github.com:yingpengsha/ts-node-lib-template.git",
+  "description": "😎 Awesome typescript library template",
+  "repository": "git@github.com:yingpengsha/ts-lib-template.git",
   "publishConfig": {
     "access": "public"
   },

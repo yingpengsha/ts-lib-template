@@ -1,4 +1,4 @@
-# ts-node-lib-template
+# ts-lib-template
 
 ## 🚀 Features
 
@@ -9,7 +9,7 @@
 
 ## 🦄 Using this template
 
-- Search `ts-node-lib-template` and replace it with your custom package name.
+- Search `ts-lib-template` and replace it with your custom package name.
 - Search `yingpengsha` and replace it with your name.
 
 ## 🌸 Thanks
@@ -18,4 +18,4 @@ This project is heavily inspired by [egoist/ts-lib-starter](https://github.com/e
 
 ## 📄 License
 
-[MIT License](https://github.com/yingpengsha/ts-node-lib-template/blob/main/LICENSE) &copy; 2021-PRESENT [PengshaYing](https://github.com/yingpengsha)
+[MIT License](https://github.com/yingpengsha/ts-lib-template/blob/main/LICENSE) &copy; 2021-PRESENT [PengshaYing](https://github.com/yingpengsha)
