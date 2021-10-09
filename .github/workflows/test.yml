@@ -4,22 +4,20 @@ on:
   push:
     branches:
       - main
-      - dev
-      - next
 
   pull_request:
     branches:
       - main
-      - dev
-      - next
 
 jobs:
   test:
-    runs-on: ubuntu-latest
-
     strategy:
       matrix:
-        node-version: [14, 16]
+        node-version: [12.x, 14.x]
+        os: [ubuntu-latest, windows-latest, macos-latest]
+      fail-fast: false
+
+    runs-on: ${{ matrix.os }}
 
     steps:
       - name: Checkout
@@ -30,13 +28,14 @@ jobs:
         with:
           version: 6.15.1
 
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Set node version to ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
           cache: "pnpm"
 
-      - run: pnpm install
+      - name: Install Dependencies
+        run: pnpm install
 
       - name: Lint
         run: pnpm run lint
