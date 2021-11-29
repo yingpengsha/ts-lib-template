@@ -23,6 +23,10 @@ module.exports = {
   ],
   rules: {
     // ts will check this rule
-    'no-undef': 'off'
+    'no-undef': 'off',
+
+    // replace 'no-redeclare' with @typescript-eslint
+    'no-redeclare': 'off',
+    '@typescript-eslint/no-redeclare': ['error']
   }
 }
