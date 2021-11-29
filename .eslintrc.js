@@ -22,8 +22,9 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
-    // ts will check this rule
+    // ts will check these rule
     'no-undef': 'off',
+    'no-unused-vars': 'off',
 
     // replace 'no-redeclare' with @typescript-eslint
     'no-redeclare': 'off',
