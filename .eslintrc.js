@@ -10,8 +10,7 @@ module.exports = {
   extends: [
     'standard',
     'plugin:json/recommended',
-    'plugin:markdown/recommended',
-    'plugin:jest/recommended'
+    'plugin:markdown/recommended'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {

@@ -1,11 +1,12 @@
+import { describe, beforeEach, afterAll, test, expect, fn } from 'vitest'
 import func from '..'
 
 describe('index.ts test', () => {
   const { log } = console
   const { warn } = console
   beforeEach(() => {
-    console.log = jest.fn()
-    console.warn = jest.fn()
+    console.log = fn()
+    console.warn = fn()
   })
   afterAll(() => {
     console.log = log
