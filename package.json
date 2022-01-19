@@ -30,7 +30,8 @@
     "test": "vitest run",
     "lint": "eslint \"**/*.{js,ts,md,json,yml}\"",
     "release": "pnpm run build && bump --commit --push --tag && pnpm publish",
-    "reset": "rimraf ./node_modules && pnpm install"
+    "reset": "rimraf ./node_modules && pnpm install",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@jsdevtools/version-bump-prompt": "^6.1.0",
