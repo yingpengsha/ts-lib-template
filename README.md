@@ -5,7 +5,7 @@
 - Package manager [pnpm](https://pnpm.js.org), safe and fast
 - Release with [@jsdevtools/version-bump-prompt](https://jstools.dev/version-bump-prompt)
 - Bundle with [tsup](https://github.com/egoist/tsup)
-- Test with [jest](https://jestjs.io)
+- Test with [vitest](https://vitest.dev/)
 
 ## 🦄 Using this template
 
