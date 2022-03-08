@@ -29,7 +29,7 @@
     "test:dev": "vitest",
     "test": "vitest run",
     "lint": "eslint \"**/*.{js,ts,md,json,yml}\"",
-    "release": "pnpm run build && bump --commit --push --tag && pnpm publish",
+    "release": "bump --commit --push --tag && pnpm publish",
     "reset": "rimraf ./node_modules && pnpm install",
     "prepare": "husky install"
   },
