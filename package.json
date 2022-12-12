@@ -6,7 +6,8 @@
   "description": "😎 Awesome typescript library template",
   "repository": "git@github.com:yingpengsha/ts-lib-template.git",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "files": [
     "dist"
