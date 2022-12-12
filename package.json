@@ -21,8 +21,8 @@
     ]
   },
   "scripts": {
-    "dev": "tsup --watch --sourcemap",
-    "build": "tsup",
+    "dev": "tsup --watch --sourcemap --env.NODE_ENV development",
+    "build": "tsup --env.NODE_ENV production",
     "test:dev": "vitest --passWithNoTests",
     "test": "vitest run --passWithNoTests",
     "lint": "eslint \"**/*.{js,ts}\"",

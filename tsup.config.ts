@@ -1,15 +1,16 @@
-import type { Options } from 'tsup'
+import { defineConfig } from 'tsup'
 
-export const tsup: Options = {
-  dts: true,
-  outDir: 'dist',
-  splitting: false,
-  clean: true,
-  format: ['cjs', 'esm'],
-  ignoreWatch: [
-    'dist'
-  ],
-  entryPoints: [
-    'src/index.ts'
-  ]
-}
+export default defineConfig(({ env }) => {
+  return {
+    dts: true,
+    outDir: 'dist',
+    splitting: false,
+    format: ['esm', 'cjs'],
+    ignoreWatch: ['libs'],
+    entryPoints: ['src/index.ts'],
+    define: {
+      __DEV__: (env?.NODE_ENV === 'development') + '',
+      __TEST__: 'false'
+    }
+  }
+})
