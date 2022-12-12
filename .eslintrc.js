@@ -8,13 +8,11 @@ module.exports = {
     node: true
   },
   extends: [
-    'standard',
-    'plugin:json/recommended',
-    'plugin:markdown/recommended'
+    'standard'
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 'latest',
     sourceType: 'module'
   },
   plugins: [
