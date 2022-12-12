@@ -1,12 +1,13 @@
-import { describe, beforeEach, afterAll, test, expect, fn } from 'vitest'
+import { describe, beforeEach, afterAll, test, expect, vi } from 'vitest'
 import func from '..'
 
 describe('index.ts test', () => {
   const { log } = console
   const { warn } = console
+
   beforeEach(() => {
-    console.log = fn()
-    console.warn = fn()
+    console.log = vi.fn()
+    console.warn = vi.fn()
   })
   afterAll(() => {
     console.log = log

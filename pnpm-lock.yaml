@@ -5,18 +5,18 @@ specifiers:
   '@types/node': ^16.18.8
   '@typescript-eslint/eslint-plugin': ^5.46.0
   '@typescript-eslint/parser': ^5.46.0
-  eslint: ^8.0.1
+  eslint: ^8.29.0
   eslint-config-standard: ^17.0.0
   eslint-define-config: ^1.12.0
-  eslint-plugin-import: ^2.25.2
-  eslint-plugin-n: ^15.0.0
-  eslint-plugin-promise: ^6.0.0
+  eslint-plugin-import: ^2.26.0
+  eslint-plugin-n: ^15.6.0
+  eslint-plugin-promise: ^6.1.1
   husky: ^7.0.4
   lint-staged: ^11.2.6
   rimraf: ^3.0.2
   tsup: ^5.12.9
   typescript: ^4.9.4
-  vitest: ^0.1.27
+  vitest: ^0.25.7
 
 devDependencies:
   '@jsdevtools/version-bump-prompt': 6.1.0
@@ -34,7 +34,7 @@ devDependencies:
   rimraf: 3.0.2
   tsup: 5.12.9_typescript@4.9.4
   typescript: 4.9.4
-  vitest: 0.1.27_@types+node@16.18.8
+  vitest: 0.25.7
 
 packages:
 
@@ -514,6 +514,11 @@ packages:
       acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       acorn: 8.8.1
+    dev: true
+
+  /acorn-walk/8.2.0:
+    resolution: {integrity: sha512-k+iyHEuPgSw6SbuDpGQM+06HQUa04DZ3o+F6CSzXMvvI5KMvnaEqXe+YVe555R9nn6GPt404fos4wcgpw12SDA==}
+    engines: {node: '>=0.4.0'}
     dev: true
 
   /acorn/8.8.1:
@@ -2599,6 +2604,11 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
+  /source-map/0.6.1:
+    resolution: {integrity: sha512-UjgapumWlbMhkBgzT7Ykc5YXUT46F0iKu8SGXq0bcwP5dz/h0Plj6enJqjz1Zbq2l5WaqYnrVbwWOWMyF3F47g==}
+    engines: {node: '>=0.10.0'}
+    dev: true
+
   /source-map/0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
@@ -2667,6 +2677,12 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /strip-literal/1.0.0:
+    resolution: {integrity: sha512-5o4LsH1lzBzO9UFH63AJ2ad2/S2AVx6NtjOcaz+VTT2h1RiRvbipW72z8M/lxEhcPHDBQwpDrnTF7sXy/7OwCQ==}
+    dependencies:
+      acorn: 8.8.1
+    dev: true
+
   /sucrase/3.29.0:
     resolution: {integrity: sha512-bZPAuGA5SdFHuzqIhTAqt9fvNEo9rESqXIG3oiKdF8K4UmkQxC4KlNL3lVyAErXp+mPvUqZ5l13qx6TrDIGf3A==}
     engines: {node: '>=8'}
@@ -2727,13 +2743,17 @@ packages:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
     dev: true
 
-  /tinypool/0.1.3:
-    resolution: {integrity: sha512-2IfcQh7CP46XGWGGbdyO4pjcKqsmVqFAPcXfPxcPXmOWt9cYkTP9HcDmGgsfijYoAEc4z9qcpM/BaBz46Y9/CQ==}
+  /tinybench/2.3.1:
+    resolution: {integrity: sha512-hGYWYBMPr7p4g5IarQE7XhlyWveh1EKhy4wUBS1LrHXCKYgvz+4/jCqgmJqZxxldesn05vccrtME2RLLZNW7iA==}
+    dev: true
+
+  /tinypool/0.3.0:
+    resolution: {integrity: sha512-NX5KeqHOBZU6Bc0xj9Vr5Szbb1j8tUHIeD18s41aDJaPeC5QTdEhK0SpdpUrZlj2nv5cctNcSjaKNanXlfcVEQ==}
     engines: {node: '>=14.0.0'}
     dev: true
 
-  /tinyspy/0.2.10:
-    resolution: {integrity: sha512-Qij6rGWCDjWIejxCXXVi6bNgvrYBp3PbqC4cBP/0fD6WHDOHCw09Zd13CsxrDqSR5PFq01WeqDws8t5lz5sH0A==}
+  /tinyspy/1.0.2:
+    resolution: {integrity: sha512-bSGlgwLBYf7PnUsQ6WOc6SJ3pGOcd+d8AA6EUnLDDM0kWEstC1JIlSZA3UNliDXhd9ABoS7hiRBDCu+XP/sf1Q==}
     engines: {node: '>=14.0.0'}
     dev: true
 
@@ -2910,19 +2930,22 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.1.27_@types+node@16.18.8:
-    resolution: {integrity: sha512-w95Izu+jzust3Ov0KdvN9xZPQm8dG5P1hNOB+uKQ+HFexFcdUW/oa0C0/NR2m2wVpsr23psRPzrBPNlBKgm0qA==}
-    engines: {node: '>=14.14.0'}
+  /vitest/0.25.7:
+    resolution: {integrity: sha512-lJ+Ue+v8kHl2JzjaKHJ9u5Yo/loU7zrWK2/Whn8OKQjtq5G7nkeWfXuq3elZaC8xKdkdIuWiiIicaNBG1F5yzg==}
+    engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
+      '@edge-runtime/vm': '*'
+      '@vitest/browser': '*'
       '@vitest/ui': '*'
-      c8: '*'
       happy-dom: '*'
       jsdom: '*'
     peerDependenciesMeta:
-      '@vitest/ui':
+      '@edge-runtime/vm':
         optional: true
-      c8:
+      '@vitest/browser':
+        optional: true
+      '@vitest/ui':
         optional: true
       happy-dom:
         optional: true
@@ -2931,17 +2954,24 @@ packages:
     dependencies:
       '@types/chai': 4.3.4
       '@types/chai-subset': 1.3.3
+      '@types/node': 16.18.8
+      acorn: 8.8.1
+      acorn-walk: 8.2.0
       chai: 4.3.7
+      debug: 4.3.4
       local-pkg: 0.4.2
-      tinypool: 0.1.3
-      tinyspy: 0.2.10
+      source-map: 0.6.1
+      strip-literal: 1.0.0
+      tinybench: 2.3.1
+      tinypool: 0.3.0
+      tinyspy: 1.0.2
       vite: 4.0.0_@types+node@16.18.8
     transitivePeerDependencies:
-      - '@types/node'
       - less
       - sass
       - stylus
       - sugarss
+      - supports-color
       - terser
     dev: true
 
