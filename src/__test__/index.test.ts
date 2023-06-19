@@ -14,7 +14,7 @@ describe('index.ts test', () => {
     console.warn = warn
   })
 
-  test('index.ts is normal running', () => {
+  test('index.ts is work', () => {
     func()
 
     // @ts-expect-error console is mocked
