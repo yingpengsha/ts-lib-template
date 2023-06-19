@@ -17,7 +17,7 @@ describe('index.ts test', () => {
   test('index.ts is normal running', () => {
     func()
 
-    // @ts-ignore
+    // @ts-expect-error console is mocked
     const logs = console.log.mock.calls
 
     expect(logs).toEqual([

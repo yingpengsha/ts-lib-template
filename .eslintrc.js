@@ -3,28 +3,27 @@
  */
 module.exports = {
   env: {
-    browser: true,
     es2021: true,
     node: true
   },
-  extends: [
-    'standard'
+  extends: 'standard-with-typescript',
+  overrides: [
+    {
+      env: {
+        node: true
+      },
+      files: ['.eslintrc.{js,cjs}'],
+      parserOptions: {
+        sourceType: 'script'
+      }
+    }
   ],
-  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+    project: ['./tsconfig.json']
   },
-  plugins: [
-    '@typescript-eslint'
-  ],
   rules: {
-    // ts will check these rule
-    'no-undef': 'off',
-    'no-unused-vars': 'off',
-
-    // replace 'no-redeclare' with @typescript-eslint
-    'no-redeclare': 'off',
-    '@typescript-eslint/no-redeclare': ['error']
+    '@typescript-eslint/naming-convention': 'off'
   }
 }

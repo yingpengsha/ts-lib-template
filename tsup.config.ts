@@ -9,7 +9,7 @@ export default defineConfig(({ env }) => {
     ignoreWatch: ['libs'],
     entryPoints: ['src/index.ts'],
     define: {
-      __DEV__: (env?.NODE_ENV === 'development') + '',
+      __DEV__: (env?.NODE_ENV === 'development').toString(),
       __TEST__: 'false'
     }
   }
