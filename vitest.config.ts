@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitest/config'
+import TSConfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig({
+  plugins: [TSConfigPaths()],
   esbuild: {
     define: {
       __DEV__: 'false',

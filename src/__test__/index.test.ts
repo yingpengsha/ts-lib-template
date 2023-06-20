@@ -1,5 +1,5 @@
 import { describe, beforeEach, afterAll, test, expect, vi } from 'vitest'
-import func from '..'
+import func from '@/index'
 
 describe('index.ts test', () => {
   const { log } = console
