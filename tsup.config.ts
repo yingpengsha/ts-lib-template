@@ -10,6 +10,7 @@ export default defineConfig(({ env }) => {
     entryPoints: ['src/index.ts'],
     define: {
       __DEV__: (env?.NODE_ENV === 'development').toString(),
+      __PROD__: (env?.NODE_ENV !== 'development').toString(),
       __TEST__: 'false'
     }
   }
