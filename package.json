@@ -33,7 +33,7 @@
     "release": "bump --commit --push --tag && pnpm publish",
     "reset": "npx rimraf ./node_modules && pnpm install",
     "prepare": "husky install",
-    "postinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
     "@jsdevtools/version-bump-prompt": "^6.1.0",
