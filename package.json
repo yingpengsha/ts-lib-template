@@ -26,9 +26,9 @@
   "scripts": {
     "dev": "tsup --watch --sourcemap --env.NODE_ENV development",
     "build": "tsup --env.NODE_ENV production",
-    "test": "vitest run --passWithNoTests",
-    "test:dev": "vitest --passWithNoTests",
-    "test:dev-ui": "vitest --ui --passWithNoTests",
+    "test": "vitest run --passWithNoTests --typecheck",
+    "test:dev": "vitest --passWithNoTests --typecheck",
+    "test:dev-ui": "vitest --ui --passWithNoTests --typecheck",
     "lint": "eslint \"**/*.{js,ts}\"",
     "release": "bump --commit --push --tag && pnpm publish",
     "reset": "npx rimraf ./node_modules && pnpm install",
