@@ -30,6 +30,7 @@
     "test:dev": "vitest --passWithNoTests",
     "test:dev-ui": "vitest --ui --passWithNoTests",
     "test:cov": "vitest run --coverage",
+    "typecheck": "vitest run --passWithNoTests --typecheck",
     "lint": "eslint \"**/*.{js,ts}\"",
     "release": "bump --commit --push --tag && pnpm publish",
     "reset": "npx rimraf ./node_modules && pnpm install",
